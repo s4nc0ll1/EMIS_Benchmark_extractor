@@ -1,0 +1,73 @@
+/* --- Sidebar Styles --- */
+section[data-testid="stSidebar"] {
+  background: #f2f6f7;
+}
+section[data-testid="stSidebar"] * {
+  color: black !important;
+}
+
+/* --- Header Styles --- */
+.stAppHeader {
+  background: white;
+  height: 5.5rem;
+}
+.stAppHeader:before {
+  content: "EMIS DOCUMENTS API - SENTIMENT ANALYSIS";
+  color: #003F57 !important;
+  font-size: 24px;
+  font-weight: bold;
+  margin-left: 350px;
+  position: absolute;
+  bottom: 1.6rem;
+}
+
+/* --- Main App Container Styles --- */
+.stAppViewContainer {
+  background: #003F57;
+  color: white; /* This is okay, as long as we style buttons separately */
+}
+
+/* --- Alert Box Styles --- */
+.stAlertContainer {
+  color: white; /* You might need to adjust this for better readability */
+}
+
+
+/* Targets all buttons that are NOT primary */
+.stButton > button:not([kind="primary"]) {
+    background-color: transparent; /* Makes the background see-through */
+    color: #ffffff;               /* Sets the text color to white */
+    border: 1px solid #ffffff;   /* Adds a white border */
+    transition: all 0.2s ease-in-out; /* Smooth transition for hover effect */
+}
+
+/* Style for when you hover over the secondary button */
+.stButton > button:not([kind="primary"]):hover {
+    background-color: #ffffff; /* On hover, background becomes white */
+    color: #003F57;            /* On hover, text becomes dark blue */
+    border-color: #ffffff;
+}
+
+/* Optional: Ensure primary buttons look consistent */
+.stButton > button[kind="primary"] {
+    background-color: #00aaff; /* A lighter blue to stand out */
+    color: #ffffff;
+    border: none;
+}
+
+.stButton > button[kind-="primary"]:hover {
+    background-color: #0088cc;
+}
+*/
+.document-container {
+  padding-bottom: 1.5rem; /* Adds some space at the bottom */
+  margin-bottom: 1.5rem;  /* Creates vertical space between documents */
+  border-bottom: 1px solid #ffffff40; /* This is the separator line! */
+                                      /* #ffffff is white, 40 makes it 25% transparent */
+}
+
+/* This prevents the very last document from having a line at the bottom */
+.document-container:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+}
