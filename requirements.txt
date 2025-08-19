@@ -1,5 +1,6 @@
 # Requerimientos para EMIS Benchmark Dashboard 
 streamlit>=1.28.0 
 pandas 
-plotly 
+plotly
+openpyxl
 emis_api_client @ http://download.emis.com/python/emis-api-client/emis_api_client-2.2.5.172.tar.gz
